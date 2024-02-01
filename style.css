@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.card{
+    padding:  3rem 2rem;
+    width: 15rem;
+    height: fit-content;
+    font-family: 'Lexend Deca';
+}
+.card>h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display';
+}
+.card>p{
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.sedan{
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan>button{
+    color: hsl(31, 77%, 52%);
+    border: 2px solid hsl(31, 77%, 52%);
+}
+.sedan>button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv>button{
+    color: hsl(184, 100%, 22%);
+    border: 2px solid hsl(184, 100%, 22%);
+}
+.suv>button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid  hsla(0, 0%, 100%, 0.75);
+}
+
+.luxury{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: hsl(179, 100%, 13%);
+}
+.luxury>button{
+   color: hsl(179, 100%, 13%);
+   border: 2px solid  hsl(179, 100%, 13%);
+}
+.luxury>button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.7);
+    border: 2px solid  hsla(0, 0%, 100%, 0.75);
+ }
+button{
+    padding: 0.7rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    width: 70%;
+    margin-top: 1rem;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+@media only screen and (min-width:425px){
+    .container{
+        flex-direction: row;
+    }
+    .card{
+        width: 15rem;
+    }
+    .sedan{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius:0 ;
+        border-bottom-left-radius: 0.5rem ;
+        border-bottom-right-radius: 0;
+    }
+    .luxury{
+        border-top-left-radius: 0;
+        border-top-right-radius:0.5rem ;
+        border-bottom-left-radius: 0 ;
+        border-bottom-right-radius: 0.5rem;
+    }
+}
